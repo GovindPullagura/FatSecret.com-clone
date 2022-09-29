@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link {
+            text-decoration: none;
+        }
+        a:link :hover{
+            text-decoration: underline;
+        }
+        body {
+            margin: 0%;
+        }
+        #head{
+            width: 100%;
+            background-color: orange;
+            margin-bottom: 0%;
+            padding: 10px;
+        }
+        #navbar{
+            width: 80%;
+            margin: auto; 
+            display: flex;
+            justify-content: space-between;
+        }
+        #navbar>div {
+            display: flex;
+            justify-content: space-between;
+            /* border: 1px solid red; */
+            width: 45%;
+        }
+        #navbar>div+div{
+            justify-content: right;
+        }
+        #title {
+            width: 80%;
+            margin: auto;
+        }
+        #title>#h2{
+            font-size: 45px;
+        }
+        #start {
+            width: 200px;
+            height: 40px;
+            background-color: rgb(50,180,76);
+            font-size: 20px;
+            color: white;
+            border: 1px solid black;
+        }
+        #title>p+p{
+            font-size: 25px;
+        }
+        .appStore{
+            width: 20%;
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+        }
+        p{
+            font-style: Helvetica, Arial;;
+        }
+        .grn{
+            width: 100%;
+            margin-top: -1%;
+            background-color: rgb(50,180,76);
+            padding: 10px;
+        }
+        .inner_content{
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            /* background-color: rgb(50,180,76); */
+        }
+        #white{
+            background-color: rgb(238,241,233);
+            width: 100%;
+            margin-top: -1%;
+            padding: 10px;
+        }
+        #whiter {
+            width: 80%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            padding-bottom: 30px;
+        }
+        #whiter>div>p:nth-child(1){
+            color: rgb(50,180,76);
+            font-size: 50px;
+            margin: 10px 0 10px 0px;
+        }
+        li{
+            margin-left: 20px;
+        }
+        #dietGoals{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+        .goal {
+            font-weight: bold;
+            /* font-size: px; */
+            display: flex;
+            justify-content: flex-start
+        }
+        #connected {
+            color: white;
+            background-color: rgb(147,173,210);
+            padding: 10px;
+        }
+        #connected>div{
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 0px;
+        }
+        #connected h2 {
+            font-size: 30px;
+        }
+        #connected p {
+            font-size: 20px;
+        }
+        #SignUp{
+            background-color: black;
+            width: 100%;
+            color: white;
+            padding: 10px;
+        }
+        #SignUp>div{
+            width: 80%;
+            margin: auto;
+            display:grid;
+            grid-template-columns: repeat(2,1fr);
+            padding: 30px;
+        }
+        #SignUp>div>div:nth-child(2){
+            margin-top: 50px;
+        }
+        #logo {
+            width: 100%;
+            background-color: rgb(238,241,233);
+            padding: 10px;
+            text-align: center;
+        }
+        #logo img {
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        #logo p {
+            margin-bottom: -20px;
+            font-weight:bold;
+        }
+        #contactUs{
+            width: 100%;
+            padding: 10px;
+            background-color: rgb(51,51,51);
+            color: white;
+            text-align: center;
+        }
+        #contactUs img {
+            margin-right: 20px;
+        }
+        #contactUs>div:nth-child(1){
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        #tANDc{
+            width: 50%;
+            margin: auto;
+            display: flex;
+            justify-content: space-evenly;
+            color: rgb(192,192,192);
+            font-size: 13px;
+        }
+        #base {
+            width: 100%;
+            padding: 10px;
+            background-color: rgb(50,180,76);
+            text-align: center;
+            color: white;
+        }
+        #base>div {
+            display: flex;
+            justify-content: right;
+            margin:-3% 10% auto auto;
+            font-size: 13px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="head">
+        <div id="navbar">
+            <div>
+              <p>Foods</p>
+              <p>Recipes</p>
+              <p>Fitness</p>
+              <p>Community</p>
+            </div>
+            <div>
+                <p>INDIA</p>
+                <img style="height: 60%; margin:10px" src="https://a.ftscrt.com/static/images/markets/smallFlags/IN.png" alt="">
+            </div>
+        </div>
+        <div id="title">
+            <p id="h2">Your Key to Success</p>
+            <img style="margin-bottom:30px ;" src="https://a.ftscrt.com/static/images/splash/FS_Logo_SplashScreen.png" alt=""><br>
+            <a href="signIn.html"><button id="start">Start for free</button></a>
+            <p>Already a Member? <span style="font-weight: bold;">Sign In</span></p>
+            <p>Start losing weight the healthy way with easy to use <br>
+                apps, online tools and support.</p>
+        </div>
+        <div class="appStore">
+           <a href="https://apps.apple.com/in/app/calorie-counter-by-fatsecret/id347184248"><img src="https://a.ftscrt.com/static/images/mobi/ios/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt=""></a> 
+           <a href="https://play.google.com/store/apps/details?id=com.fatsecret.android"><img src="https://a.ftscrt.com/static/images/mobi/android/en_get_2.svg" alt=""></a> 
+        </div>
+    </div>
+
+
+    <div class="grn">
+        <div class="inner_content">
+            <p style="font-size: 35px; color: white">Superb 100% FREE calorie counter apps</p>
+            <p style="font-size: 25px; color: white;">Over 35 million people have lost weight with FatSecret. Start your weight loss journey today and access the world's highest quality food and nutrition database.</p>
+        </div>
+    </div>
+
+    <div id="white">
+        <div id="whiter">
+            <div>
+                <p>Why FatSecret?</p>
+                  <li>100% free, nothing to pay
+                  <li>Fastest, easiest to use calorie counter apps</li>
+                  <li>Supportive community</li>  
+                  <li>Proven success</li>
+            </div>
+            <div> 
+                <p>How FatSecret Works!</p>
+                <p style="line-height: 25px;">People who track food achieve more than double the average weight loss and <br> members lose weight 3x faster when doing it with friends. FatSecret combines <br> these to create the most powerful solution for healthy, sustainable weight loss.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="grn">
+        <div class="inner_content">
+            <p style="font-size:40px; margin:auto; color: white;  ">All the tools to achieve your diet goals</p>
+            <div id="dietGoals">
+                <div>
+                    <div class="goal">
+                        <img src="https://a.ftscrt.com/static/images/splash/Check_Tick.png" alt="">
+                        <p>A food diary to keep track of what you're eating</p>
+                    </div>
+                    <div class="goal">
+                        <img src="https://a.ftscrt.com/static/images/splash/Check_Tick.png" alt="">
+                        <p>A large collection of healthy recipes for your diet</p>
+                    </div>
+                    <div class="goal">
+                        <img src="https://a.ftscrt.com/static/images/splash/Check_Tick.png" alt="">
+                        <p>Nutrition info for all foods, brands and restaurants</p>
+                    </div>
+                </div>
+                <div>
+                    <div class="goal">
+                        <img src="https://a.ftscrt.com/static/images/splash/Check_Tick.png" alt="">
+                        <p> An exercise diary to record all the calories you burn</p>
+                    </div>
+                    <div class="goal">
+                        <img src="https://a.ftscrt.com/static/images/splash/Check_Tick.png" alt="">
+                        <p> A weight chart and journal to record your progress</p>
+                    </div>
+                    <div class="goal">
+                        <img src="https://a.ftscrt.com/static/images/splash/Check_Tick.png" alt="">
+                        <p>Mobile apps for iPhone, iPad and Android</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="connected">
+        <div>
+            <div>
+               <h2>Get Connected with FatSecret</h2>
+               <p>The perfect application for keeping track of your food, exercise and weight while on-the-go</p>
+               <div style="display: flex;">
+                <img src="https://a.ftscrt.com/static/images/splash/Check_Tick.png" alt="">
+                <p>iPhone, iPod Touch and iPad</p>
+               </div>
+               <div style="display: flex;">
+                <img src="https://a.ftscrt.com/static/images/splash/Check_Tick.png" alt="">
+                <p>Android Phones and Tablets</p>
+               </div>
+               <div class="appStore">
+                  <a href="https://apps.apple.com/in/app/calorie-counter-by-fatsecret/id347184248"><img src="https://a.ftscrt.com/static/images/mobi/ios/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt=""></a> 
+                  <a href="https://play.google.com/store/apps/details?id=com.fatsecret.android"><img src="https://a.ftscrt.com/static/images/mobi/android/en_get_2.svg" alt=""></a> 
+               </div>
+            </div>
+            <div>
+                <img style="height: 70%;  width:70%;" src="https://a.ftscrt.com/static/images/splash/img_splash_getconnected_01_2x.png" alt="">
+            </div>
+        </div>
+        
+    </div>
+
+
+    <div id="SignUp">
+        <div>
+            <div>
+                <h2 style="font-size: 30px; ">Sign Up Now!</h2>
+                <h4>FatSecret is 100% free</h4>
+            </div>
+            <div>
+                <button id="start">Start for free</button>
+                <p>Already a Member? <a style="font-weight: bold; color: white;" href="signIn.html">Sign In</a></span></p>
+            </div>
+        </div>
+        
+    </div>
+
+    <div id="logo">
+        
+           <a href="index.html"><img src="https://a.ftscrt.com/static/images/splash/FS_Logo_SplashScreen_Green.png" alt=""></a> 
+            <div>
+                <p>Get the app</p>
+                <div class="appStore">
+                    <a href="https://apps.apple.com/in/app/calorie-counter-by-fatsecret/id347184248"><img src="https://a.ftscrt.com/static/images/mobi/ios/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt=""></a> 
+                    <a href="https://play.google.com/store/apps/details?id=com.fatsecret.android"><img src="https://a.ftscrt.com/static/images/mobi/android/en_get_2.svg" alt=""></a> 
+                 </div>
+            </div>
+        
+       
+        
+    </div>
+
+    <div id="contactUs">
+        <div> 
+            <a href="https://www.facebook.com/fatsecret/"><img src="https://a.ftscrt.com/static/images/social/but_social_facebook.svg" alt=""></a>
+            <a href="https://www.instagram.com/fatsecret_app/"><img src="https://a.ftscrt.com/static/images/social/but_social_instagram.svg" alt=""></a>
+            <a href="https://twitter.com/FatSecret"><img src="https://a.ftscrt.com/static/images/social/but_social_twitter.svg" alt=""></a>
+            
+        </div>
+        <div>
+            <p>BRAND LIST</p>
+            <p>CONTACT US</p>
+            <div id="tANDc">
+                <p>FIND PEOPLE</p>
+                <p>|</p>
+                <p>TERMS AND CONDITIONS</p>
+                <p>|</p>
+                <p>PRIVACY POLICY</p>
+                <p>|</p>
+                <p>REPORT ABUSE</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="base">
+        <p>© 2022 FatSecret. All rights reserved</p>
+        <div>
+            <p>INDIA</p>
+            <img style="height: 60%; margin:10px" src="https://a.ftscrt.com/static/images/markets/smallFlags/IN.png" alt="">
+        </div>
+    </div>
+</body>
+</html>
