@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            color: white;
+        }
+        a:link {
+            text-decoration: none;
+        }
+        a:link :hover{
+            text-decoration: underline;
+        }
+        body{
+            margin: 0%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #reg {
+            background-color: rgb(51,179,75);
+            width: 100%;
+        }
+        #reg>div{
+            display: flex;
+            margin-left: 78%;
+            margin-right: 12%;
+            justify-content: space-between;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        #reg p{
+            color: white;
+
+        }
+        #reg a:link{
+            text-decoration: none;
+        }
+        #reg a:hover{
+            text-decoration: underline;
+        }
+
+        #navbarHome {
+            width: 100%;
+            background-color: rgb(238,241,233);
+        }
+        #navbarHome>div {
+            width: 75%;
+            margin: auto;
+        }
+        #search_bar{
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #search_bar>div:nth-child(1)>p{
+            text-align: right;
+            color: rgb(51,179,75);
+            margin-top: -5%;
+            font-size: 13px;
+            font-weight: bold;
+        }
+        #search_bar>div:nth-child(2){
+            display: flex;
+            justify-content: center;
+            height: 30px;
+        }
+        #search_bar input{
+            width: 300px;
+            margin-right: 5px;
+            background-color: rgb(238,241,233);
+            border: 1px solid rgb(170, 171, 170);
+        }
+        #navbarHome>#navbar{
+            width: 80%;
+            display: flex;
+            height: 20px;
+            text-align: center;
+            margin-top: 30px;
+        }
+        #navbar a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 10px;
+            font-weight: bold;
+            color: rgb(147,169,196);
+            width: 16%;
+            border: 1px solid rgb(170, 171, 170);
+            margin-bottom: 0px;
+        }
+        #navbar>div:hover {
+            color: rgb(66,133,244);
+        }
+        #container {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        #left_cell {
+            width :65%;
+            /* border: 1px solid red; */
+        }
+        #right_cell {
+            width: 30%;
+            margin-right: 3% ;
+            height: 100px;
+            background-color: rgb(238,241,233);
+        }
+        #right_cell>div {
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        #recipes {
+            display: flex;
+            justify-content: left;
+            border: 4px solid green;
+        }
+        #recipes>div {
+            line-height: 10px;
+            color: rgb(94,94,83);
+        }
+        #topShelf {
+            margin:30px auto auto 20px;
+        }
+        .basic {
+            display: flex;
+            margin-bottom: 10px;
+        }
+        .basic #image {
+            margin-right: 10px;
+            height: 40%;
+        }
+        .basic h4 {
+            color: rgb(11,141,196);
+        }
+        #bottomShelf {
+            width: 100%;
+        }
+        .recipe {
+            display: flex;
+            width: 100%;
+            margin-top: 0%;
+        }
+        .recipe>img {
+            height: 7%;
+            width: 7%;
+            margin-top: 22px;
+            margin-right: 10px;
+        }
+        .recipe .item{
+            width: 92%;
+            height: 7%;
+        }
+        .item>div {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .item p {
+            font-size: 13px;
+            margin-top: 0%;
+            margin-bottom: 0%;
+        }
+        #logo {
+            width: 100%;
+            padding-top: 10px;
+            text-align: center;
+        }
+        #logo img {
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        #logo p {
+            margin-bottom: -20px;
+            font-weight:bold;
+        }
+        #contactUs{
+            width: 100%;
+            padding-top: 10px;
+            background-color: rgb(51,51,51);
+            color: white;
+            text-align: center;
+        }
+        #contactUs img {
+            margin-right: 20px;
+        }
+        #contactUs>div:nth-child(1){
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        #tANDc{
+            width: 50%;
+            margin: auto;
+            display: flex;
+            justify-content: space-evenly;
+            color: rgb(192,192,192);
+            font-size: 13px;
+        }
+        #base {
+            width: 100%;
+            padding-top: 10px;
+            background-color: rgb(50,180,76);
+            text-align: center;
+            color: white;
+        }
+        #base>div {
+            display: flex;
+            justify-content: right;
+            margin:-3% 10% auto auto;
+            font-size: 13px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div id="reg">
+        <div>
+          <a href="index.html"><p>Register</p></a>
+          <p>|</p>
+          <a href="signIn.html"><p>Sign In</p></a>
+        </div>
+    </div>
+
+    <div id="navbarHome">
+        <div id="search_bar">
+            <div>
+                <a href="index.html"><img src="https://a.ftscrt.com/static/images/def20/Fatsecret_logo.png" alt=""></a>
+                <p>INDIA</p>
+            </div>
+           <div>
+              <img src="https://a.ftscrt.com/static/images/def20/quicksearch/search_foods.png" alt="">
+              <input type="text" placeholder="Enter Search">
+              <img src="https://a.ftscrt.com/static/images/def20/But_Search_Grey_pressed.png" alt="">
+           </div>
+        </div>
+        <div id="navbar">
+            <a href="signIn.html"><div>MY FATSECRET</div></a>
+            <a href="foods.html"><div>FOODS</div></a> 
+            <a href="recipes.html"><div>RECIPES</div></a>
+            <a href="fitness.html"><div>FITNESS</div></a>
+            <a href="recipes.html"><div>COMMUNITY</div></a>
+            <a href=""><div></div></a>
+        </div>
+    </div>
+    
+    <div id="container">
+        <div id="left_cell">
+            <div id="recipes">
+                <img style="height:10%; ; width:10%; margin: 10px 5px auto 20px; " src="https://media.istockphoto.com/vectors/recipe-book-hand-drawn-cover-vector-illustration-vector-id1185879263?k=20&m=1185879263&s=612x612&w=0&h=Qiw3sY0LiWG4IIKcKQI9fAwAxR81xLmbhRpYpgt3S8I=" alt="">
+                <div>
+                 <h2>Recipes</h2>
+                 <p style="font-size:15px;">Find great recipes for any meal, food or diet, rated and reviewed for you.</p>
+                </div>
+            </div>
+            <div id="topShelf">
+                <div class="basic">
+                    <img id="image" src="https://m.ftscrt.com/static/recipe/a7760c7d-eb16-46d5-86c1-ecb974be26ab_sq.jpg" alt="">
+                    <div>
+                        <h4 style="margin-bottom: 0%;">Keto Alfredo Pasta</h4>
+                        <p style="font-size: 13px; margin-top: 0%;margin-bottom: 0%;">A low carb recipe with zucchini.</p>
+                        <img style="margin-top: 0%;" src="https://a.ftscrt.com/static/images/stars/four-star.gif" alt="">
+                    </div>
+                </div>
+                <div class="basic">
+                    <img id="image" src="https://m.ftscrt.com/static/recipe/814eb562-9189-4fa8-9755-b12e4253cb52_sq.jpg" alt="">
+                    <div>
+                        <h4 style="margin-bottom: 0%;">Masala Buttermilk</h4>
+                        <p style="font-size: 13px;margin-top: 0%;margin-bottom: 0%;">A spiced yet refreshing Indian drink.</p>
+                        <img style="margin-top: 0%;" src="https://a.ftscrt.com/static/images/stars/four-star.gif" alt="">
+                    </div>
+                </div>
+                <div class="basic">
+                    <img id="image" src="https://m.ftscrt.com/static/recipe/a7760c7d-eb16-46d5-86c1-ecb974be26ab_sq.jpg" alt="">
+                    <div>
+                        <h4 style="margin-bottom: 0%;">Coffee Ice Cream</h4>
+                        <p style="font-size: 13px;margin-top: 0%;margin-bottom: 0%;">Creamy, easy to make and only 5 ingredients needed.</p>
+                        <img style="margin-top: 0%;" src="https://a.ftscrt.com/static/images/stars/three-star.gif" alt="">
+                    </div>
+                </div>
+                <div class="basic">
+                    <img id="image" src="https://m.ftscrt.com/static/recipe/ec6c629b-9762-44f6-adc4-887e31eaab16_sq.jpg" alt="">
+                    <div>
+                        <h4 style="margin-bottom: 0%;">Tuna Salad</h4>
+                        <p style="font-size: 13px;margin-top: 0%;margin-bottom: 0%;">Tasty and healthy salad made in minutes with basic ingredients.</p>
+                        <img style="margin-top: 0%;" src="https://a.ftscrt.com/static/images/stars/four-star.gif" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div id="bottomShelf">
+                <div class="recipe">
+                    <img src="https://m.ftscrt.com/static/recipe/bf0f6b0a-cabe-4737-bf3c-ee4dda574119_sq.jpg" alt="">
+                    <div class="item">
+                        <h5 style="color: rgb(11,141,196);margin-bottom: 0%">Pasta with Spinach and Chicken</h5>
+                        <div>
+                            <div>
+                                <p>A non-dairy pasta is full of protein and super tasty.</p>
+                                <img src="https://a.ftscrt.com/static/images/stars/five-star.gif" alt="">
+                            </div>
+                            <div style="text-align: right; ">
+                                <p>by member: pratik_choudhari</p>
+                                <p style="font-size:10px ; color:gray">per serve - Calories: 176kcal | Fat: 4.49g | Carbs: 15.12g | Prot: 18.22g</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                
+                </div>
+                <hr>
+                <div class="recipe">
+                    <img src="https://m.ftscrt.com/static/recipe/fe2bfdb2-67c0-4f13-8a18-15c1a4df6b2e_sq.jpg" alt="">
+                    <div class="item">
+                        <h5 style="color: rgb(11,141,196); margin-bottom: 0%;">Buta Dali Alu Tarkari</h5>
+                        <div>
+                            <div>
+                                <p>Buta dali mix with aloo.</p>
+                                <img src="https://a.ftscrt.com/static/images/stars/five-star.gif" alt="">
+                            </div>
+                            <div style="text-align: right; ">
+                                <p>by member: ChimS 1491</p>
+                                <p style="font-size:10px ; color:gray">per serve - Calories: 295kcal | Fat: 17.76g | Carbs: 32.04g | Prot: 5.67g</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="recipe">
+                    <img src="https://m.ftscrt.com/static/recipe/327302be-9e68-4adc-a6d6-bba328e7f471_sq.jpg" alt="">
+                    <div class="item">
+                        <h5 style="color: rgb(11,141,196); margin-bottom: 0%;">Khichdi</h5>
+                        <div>
+                            <div>
+                                <p>Healthy recipe with rice and moong dal.</p>
+                                <img src="https://a.ftscrt.com/static/images/stars/five-star.gif" alt="">
+                            </div>
+                            <div style="text-align: right; ">
+                                <p>by member: Sushmita uppalapati</p>
+                                <p style="font-size:10px ; color:gray">per serve - Calories: 244kcal | Fat: 13.01g | Carbs: 26.87g | Prot: 5.98g</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="recipe">
+                    <img src="https://m.ftscrt.com/static/recipe/2f0b237e-a4df-43de-a025-2ef01a4cede1_sq.jpg" alt="">
+                    <div class="item">
+                        <h5 style="color: rgb(11,141,196); margin-bottom: 0%;">Dalma</h5>
+                        <div>
+                            <div>
+                                <p>Mixed vegetables cooked togather with dal.</p>
+                                <img src="https://a.ftscrt.com/static/images/stars/five-star.gif" alt="">
+                            </div>
+                            <div style="text-align: right; ">
+                                <p>by member: ChimS 1491</p>
+                                <p style="font-size:10px ; color:gray">per serve - Calories: 152kcal | Fat: 2.57g | Carbs: 29.69g | Prot: 4.75g</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="recipe">
+                    <img src="https://m.ftscrt.com/static/recipe/aec1bb0b-8825-45cd-9192-58b5815a0e59_sq.jpg" alt="">
+                    <div class="item">
+                        <h5 style="color: rgb(11,141,196); margin-bottom: 0%;">Egg White Salad</h5>
+                        <div>
+                            <div>
+                                <p>Egg whites with cucumber, tomatoes and onions make a fibre full recipe.</p>
+                                <img src="https://a.ftscrt.com/static/images/stars/five-star.gif" alt="">
+                            </div>
+                            <div style="text-align: right; ">
+                                <p>by member: shemant</p>
+                                <p style="font-size:10px ; color:gray">per serve - Calories: 152kcal | Fat: 2.57g | Carbs: 29.69g | Prot: 4.75g</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="recipe">
+                    <img src="https://m.ftscrt.com/static/recipe/ff8c8350-9f78-4d35-8541-cf8365012c37_sq.jpg" alt="">
+                    <div class="item">
+                        <h5 style="color: rgb(11,141,196); margin-bottom: 0%;">Beetroot Smoothie</h5>
+                        <div>
+                            <div>
+                                <p>Simple blended smoothie with beetroot, carrots and dates.</p>
+                                <img src="https://a.ftscrt.com/static/images/stars/five-star.gif" alt="">
+                            </div>
+                            <div style="text-align: right; ">
+                                <p>by member: mysterious blogger</p>
+                                <p style="font-size:10px ; color:gray">per serve - Calories: 133kcal | Fat: 0.57g | Carbs: 31.49g | Prot: 3.58g</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="recipe">
+                    <img src="https://m.ftscrt.com/static/recipe/cb150263-0ad5-43e5-8f48-ae3862530974_sq.jpg" alt="">
+                    <div class="item">
+                        <h5 style="color: rgb(11,141,196); margin-bottom: 0%;">Cauliflower Rice</h5>
+                        <div>
+                            <div>
+                                <p>Keto friendly "rice" dish..</p>
+                                <img src="https://a.ftscrt.com/static/images/stars/five-star.gif" alt="">
+                            </div>
+                            <div style="text-align: right; ">
+                                <p>by member: janes72</p>
+                                <p style="font-size:10px ; color:gray">per serve - Calories: 208kcal | Fat: 19.41g | Carbs: 7.95g | Prot: 3.03g</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="recipe">
+                    <img src="https://m.ftscrt.com/static/recipe/a11957d1-3dbc-45a5-adc9-5c485f917aa4_sq.jpg" alt="">
+                    <div class="item">
+                        <h5 style="color: rgb(11,141,196); margin-bottom: 0%;">Makka Paratha</h5>
+                        <div>
+                            <div>
+                                <p>When we don't havve much time early in the morning, this recipe makes our life easy.</p>
+                                <img src="https://a.ftscrt.com/static/images/stars/five-star.gif" alt="">
+                            </div>
+                            <div style="text-align: right; ">
+                                <p>by member: Khushiaggarwal</p>
+                                <p style="font-size:10px ; color:gray">per serve - Calories: 83kcal | Fat: 0.63g | Carbs: 18.19g | Prot: 2.09g</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="recipe">
+                    <img src="https://m.ftscrt.com/static/recipe/6ea83866-4833-4b6d-bfe5-ce851369539b_sq.jpg" alt="">
+                    <div class="item">
+                        <h5 style="color: rgb(11,141,196); margin-bottom: 0%;">Quinoa Spinach Broccoli</h5>
+                        <div>
+                            <div>
+                                <p>Healthy quinoa with vegetables and spices.</p>
+                                <img src="https://a.ftscrt.com/static/images/stars/five-star.gif" alt="">
+                            </div>
+                            <div style="text-align: right; ">
+                                <p>by member: shaik.zoya18</p>
+                                <p style="font-size:10px ; color:gray">per serve - Calories: 103kcal | Fat: 2.18g | Carbs: 17.31g | Prot: 4.51g</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="recipe">
+                    <img src="https://m.ftscrt.com/static/recipe/6a5b3586-2bae-4b7f-9c98-36d5311c6af8_sq.jpg" alt="">
+                    <div class="item">
+                        <h5 style="color: rgb(11,141,196); margin-bottom: 0%;">Chicken Meatballs</h5>
+                        <div>
+                            <div>
+                                <p>Tasty and healthy meatballs served with rice or roti.</p>
+                                <img src="https://a.ftscrt.com/static/images/stars/five-star.gif" alt="">
+                            </div>
+                            <div style="text-align: right; ">
+                                <p>by member: shaik.zoya18</p>
+                                <p style="font-size:10px ; color:gray">per serve - Calories: 125kcal | Fat: 5.13g | Carbs: 4.18g | Prot: 15.58g</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="recipe">
+                    <img src="https://m.ftscrt.com/static/recipe/3d964601-fa86-47b5-94ac-022a90b5748f_sq.jpg" alt="">
+                    <div class="item">
+                        <h5 style="color: rgb(11,141,196); margin-bottom: 0%;">Garlic Roti</h5>
+                        <div>
+                            <div>
+                                <p>A healthy alternative for garlic bread.</p>
+                                <img src="https://a.ftscrt.com/static/images/stars/five-star.gif" alt="">
+                            </div>
+                            <div style="text-align: right; ">
+                                <p>by member: Tanvi Gaikwad</p>
+                                <p style="font-size:10px ; color:gray">per serve - Calories: 767kcal | Fat: 43.76g | Carbs: 82.43g | Prot: 11.59g</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="recipe">
+                    <img src="https://m.ftscrt.com/static/recipe/91b59094-787e-4aa8-a9f3-12a2140d1c52_sq.jpg" alt="">
+                    <div class="item">
+                        <h5 style="color: rgb(11,141,196); margin-bottom: 0%;">Poha & Milk</h5>
+                        <div>
+                            <div>
+                                <p>Great recipe for instant energy which you can eat before or after a workout.</p>
+                                <img src="https://a.ftscrt.com/static/images/stars/five-star.gif" alt="">
+                            </div>
+                            <div style="text-align: right; ">
+                                <p>by member: Fairy Demon</p>
+                                <p style="font-size:10px ; color:gray">per serve - Calories: 201kcal | Fat: 4.93g | Carbs: 33.66g | Prot: 5.73g</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="recipe">
+                    <img src="https://m.ftscrt.com/static/recipe/af77e7dd-2204-4aa8-8266-4726f0b233b0_sq.jpg" alt="">
+                    <div class="item">
+                        <h5 style="color: rgb(11,141,196); margin-bottom: 0%;">Green Juice</h5>
+                        <div>
+                            <div>
+                                <p>Healthy vegetable and fruit juice.</p>
+                                <img src="https://a.ftscrt.com/static/images/stars/five-star.gif" alt="">
+                            </div>
+                            <div style="text-align: right; ">
+                                <p>by member: abhishekubale</p>
+                                <p style="font-size:10px ; color:gray">per serve - Calories: 136kcal | Fat: 5.31g | Carbs: 22.03g | Prot: 3.50g</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="recipe">
+                    <img src="https://m.ftscrt.com/static/recipe/2fab4c7f-89df-4705-94f1-da67e830c720_sq.jpg" alt="">
+                    <div class="item">
+                        <h5 style="color: rgb(11,141,196); margin-bottom: 0%;">Sattu Kebab</h5>
+                        <div>
+                            <div>
+                                <p>Vegetarian kebabs made with sattu and rice flour.</p>
+                                <img src="https://a.ftscrt.com/static/images/stars/five-star.gif" alt="">
+                            </div>
+                            <div style="text-align: right; ">
+                                <p>by member: theamansinghal</p>
+                                <p style="font-size:10px ; color:gray">per serve - Calories: 239kcal | Fat: 11.05g | Carbs: 27.73g | Prot: 8.21g</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="recipe">
+                    <img src="https://m.ftscrt.com/static/recipe/714620de-6668-49c3-8472-fcc9cd3086b1_sq.jpg" alt="">
+                    <div class="item">
+                        <h5 style="color: rgb(11,141,196); margin-bottom: 0%;">Lower Fat Paneer</h5>
+                        <div>
+                            <div>
+                                <p>Paneer with vegetables and spices.</p>
+                                <img src="https://a.ftscrt.com/static/images/stars/five-star.gif" alt="">
+                            </div>
+                            <div style="text-align: right; ">
+                                <p>by member: Nishant Vimal</p>
+                                <p style="font-size:10px ; color:gray">per serve - Calories: 363kcal | Fat: 30.22g | Carbs: 18.61g | Prot: 17.33g</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="recipe">
+                    <img src="https://m.ftscrt.com/static/recipe/0fdd9c06-8643-4b43-84b2-11b6551e3479_sq.jpg" alt="">
+                    <div class="item">
+                        <h5 style="color: rgb(11,141,196); margin-bottom: 0%;">Besan Beetroot Chilla</h5>
+                        <div>
+                            <div>
+                                <p>Fantastic savoury chilla with a beautiful colour to match.</p>
+                                <img src="https://a.ftscrt.com/static/images/stars/five-star.gif" alt="">
+                            </div>
+                            <div style="text-align: right; ">
+                                <p>by member: natashakashyap724</p>
+                                <p style="font-size:10px ; color:gray">per serve - Calories: 415kcal | Fat: 6.40g | Carbs: 66.34g | Prot: 22.88g</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <p style="font-size:15px ; color:teal; text-align: right;">View More Recipes</p>
+            </div>
+        </div>
+
+        <div id="right_cell">
+            <p style="margin-left: 2%;"><i>Food Search</i></p>
+            <div>
+               <input style="width: 80%;" type="text" placeholder="Enter Search">
+               <img src="https://a.ftscrt.com/static/images/def20/But_Search_Blue_pressed.png" alt="">
+            </div>
+            
+        </div>
+    </div>
+
+    <div id="logo">
+        <div>
+            <p>Get the app</p>
+            <div class="appStore">
+                <a href="https://apps.apple.com/in/app/calorie-counter-by-fatsecret/id347184248"><img src="https://a.ftscrt.com/static/images/mobi/ios/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt=""></a> 
+                <a href="https://play.google.com/store/apps/details?id=com.fatsecret.android"><img src="https://a.ftscrt.com/static/images/mobi/android/en_get_2.svg" alt=""></a> 
+             </div>
+        </div>
+    </div>
+
+    <div id="contactUs">
+      <div> 
+         <a href="https://www.facebook.com/fatsecret/"><img src="https://a.ftscrt.com/static/images/social/but_social_facebook.svg" alt=""></a>
+         <a href="https://www.instagram.com/fatsecret_app/"><img src="https://a.ftscrt.com/static/images/social/but_social_instagram.svg" alt=""></a>
+         <a href="https://twitter.com/FatSecret"><img src="https://a.ftscrt.com/static/images/social/but_social_twitter.svg" alt=""></a>
+        
+        </div>
+        <div>
+            <p>BRAND LIST</p>
+            <p>CONTACT US</p>
+          <div id="tANDc">
+             <p>FIND PEOPLE</p>
+             <p>|</p>
+             <p>TERMS AND CONDITIONS</p>
+             <p>|</p>
+             <p>PRIVACY POLICY</p>
+             <p>|</p>
+             <p>REPORT ABUSE</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="base">
+       <p>© 2022 FatSecret. All rights reserved</p>
+        <div>
+           <p>INDIA</p>
+           <img style="height: 60%; margin:10px" src="https://a.ftscrt.com/static/images/markets/smallFlags/IN.png" alt="">
+        </div>
+    </div>
+</body>
+</html>
