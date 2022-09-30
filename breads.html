@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        a {
+            color: white;
+        }
+        a:link {
+            text-decoration: none;
+        }
+        a:link :hover{
+            text-decoration: underline;
+        }
+        body{
+            margin: 0%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #reg {
+            background-color: rgb(51,179,75);
+            width: 100%;
+        }
+        #reg>div{
+            display: flex;
+            margin-left: 78%;
+            margin-right: 12%;
+            justify-content: space-between;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        #reg p{
+            color: white;
+
+        }
+        #reg a:link{
+            text-decoration: none;
+        }
+        #reg a:hover{
+            text-decoration: underline;
+        }
+
+        #navbarHome {
+            width: 100%;
+            background-color: rgb(238,241,233);
+        }
+        #navbarHome>div {
+            width: 75%;
+            margin: auto;
+        }
+        #search_bar{
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #search_bar>div:nth-child(1)>p{
+            text-align: right;
+            color: rgb(51,179,75);
+            margin-top: -5%;
+            font-size: 13px;
+            font-weight: bold;
+        }
+        #search_bar>div:nth-child(2){
+            display: flex;
+            justify-content: center;
+            height: 30px;
+        }
+        #search_bar input{
+            width: 300px;
+            margin-right: 5px;
+            background-color: rgb(238,241,233);
+            border: 1px solid rgb(170, 171, 170);
+        }
+        #navbarHome>#navbar{
+            width: 80%;
+            display: flex;
+            height: 20px;
+            text-align: center;
+            margin-top: 30px;
+        }
+        #navbar a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 10px;
+            font-weight: bold;
+            color: rgb(147,169,196);
+            width: 16%;
+            border: 1px solid rgb(170, 171, 170);
+            margin-bottom: 0px;
+        }
+        #navbar>div:hover {
+            color: rgb(66,133,244);
+        }
+        #container {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        #left_cell {
+            width :65%;
+            /* border: 1px solid red; */
+        }
+        #right_cell {
+            width: 30%;
+            margin-right: 3% ;
+            height: 100px;
+            background-color: rgb(238,241,233);
+            /* text-align: center; */
+        }
+        #right_cell>div {
+            display: flex;
+            justify-content: space-around;
+        }
+        #breads {
+            display: flex;
+            justify-content: space-around;
+            border: 3px solid green;
+            padding: 5px 0px;
+        }
+
+        #breads h2 {
+            margin-right: 45%;
+        }
+        #breads+div {
+            display: flex;
+            margin-top: 20px;
+        }
+        #menu {
+            width: 25%;
+            padding: 10px;
+            background-color: rgb(235,250,252);
+            height: 40%;
+        }
+        #menu div {
+            display: flex;
+        }
+        #menu p{
+            margin-left: 10%;
+            color: rgb(11,141,196);
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        #beansList {
+            margin-left: 20px;
+            width: 70%;
+        }
+        #beansList p {
+            font-size: 14px;
+            color:rgb(11,141,196);
+        }
+        #beansList p+p{
+            text-align: right;
+            font-size: 10px;
+            font-weight: bold;
+        }
+        #logo {
+            width: 100%;
+            padding-top: 10px;
+            text-align: center;
+        }
+        #logo img {
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        #logo p {
+            margin-bottom: -20px;
+            font-weight:bold;
+        }
+        #contactUs{
+            width: 100%;
+            padding-top: 10px;
+            background-color: rgb(51,51,51);
+            color: white;
+            text-align: center;
+        }
+        #contactUs img {
+            margin-right: 20px;
+        }
+        #contactUs>div:nth-child(1){
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        #tANDc{
+            width: 50%;
+            margin: auto;
+            display: flex;
+            justify-content: space-evenly;
+            color: rgb(192,192,192);
+            font-size: 13px;
+        }
+        #base {
+            width: 100%;
+            padding-top: 10px;
+            background-color: rgb(50,180,76);
+            text-align: center;
+            color: white;
+        }
+        #base>div {
+            display: flex;
+            justify-content: right;
+            margin:-3% 10% auto auto;
+            font-size: 13px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="reg">
+        <div>
+          <a href="index.html"><p>Register</p></a>
+          <p>|</p>
+          <a href="signIn.html"><p>Sign In</p></a>
+        </div>
+    </div>
+
+    <div id="navbarHome">
+        <div id="search_bar">
+            <div>
+                <a href="index.html"><img src="https://a.ftscrt.com/static/images/def20/Fatsecret_logo.png" alt=""></a>
+                <p>INDIA</p>
+            </div>
+           <div>
+              <img src="https://a.ftscrt.com/static/images/def20/quicksearch/search_foods.png" alt="">
+              <input type="text" placeholder="Enter Search">
+              <img src="https://a.ftscrt.com/static/images/def20/But_Search_Grey_pressed.png" alt="">
+           </div>
+        </div>
+        <div id="navbar">
+            <a href="signIn.html"><div>MY FATSECRET</div></a>
+            <a href="foods.html"><div>FOODS</div></a> 
+            <a href="recipes.html"><div>RECIPES</div></a>
+            <a href="fitness.html"><div>FITNESS</div></a>
+            <a href="recipes.html"><div>COMMUNITY</div></a>
+            <a href=""><div></div></a>
+        </div>
+    </div>
+
+    <div id="container">
+        <div id="left_cell">
+            <div id="breads">
+                <img style="height:9%; width:9%; margin-top: 10px; " src="https://a.ftscrt.com/static/images/food_groups/breads_cereals.jpg" alt="">
+                 <h2>Breads & Cereals</h2>
+            </div>
+
+            <div>
+                <div id="menu">
+                    <div>
+                        <img style="width: 25%; height: 20%; margin-top: 10px;" src="https://a.ftscrt.com/static/images/box/recipesicon_trans.gif" alt="">
+                        <h3>Foods</h3>
+                    </div>
+                    <a href="beans.html"><p>Beans & Legumes</p></a> 
+                    <a href="breads.html"><p>Breads & Cereals</p></a> 
+                    <a href="beans.html"><p>Cheese, Milk & Dairy</p></a>     
+                    <a href="breads.html"><p>Drinks</p></a> 
+                    <a href="beans.html"><p>Eggs</p></a> 
+                    <a href="breads.html"><p>Fast Food</p></a> 
+                    <a href="beans.html"><p>Fish & Seafood</p></a>
+                    <a href="breads.html"><p>Fruit</p></a>
+                    <a href="breads.html"><p>Meat</p></a>
+                    <a href="beans.html"><p>Nuts & Seeds</p></a>
+                    <a href="breads.html"><p>Pasta, Rice & Noodles</p></a>
+                    <a href="beans.html"><p>Salads</p></a>
+                    <a href="breads.html"><p>Sauces, Spices & Spreads</p></a>
+                    <a href="beans.html"><p>Snacks</p></a>
+                    <a href="breads.html"><p>Soups</p></a>
+                    <a href="beans.html"><p>Sweets & Desserts</p></a>
+                    <a href="breads.html"><p>Vegetables</p></a>
+                    <a href="beans.html"><p>Other</p></a>
+                </div>
+
+                <div id="beansList">
+                    <h3>Bagels</h3>
+                    <p>Bagel, Wheat Bagel, Multigrain Bagel, Toasted Bagel, Cinnamon Raisin Bagels</p>
+                    <p>View More Bagels Nutritional Info</p>
+                    <hr>
+                    <h3>Bread</h3>
+                    <p>Whole Wheat Bread, White Bread, Multigrain Bread, Sour Dough Bread, Dinner Rolls</p>
+                    <p>View More Bread Nutritional Info</p>
+                    <hr>
+                    <h3>Breadsticks</h3>
+                    <p>Plain Bread Sticks, Hard Bread Sticks, Soft Bread Stick, Whole Wheat Hard Bread Stick, Low Sodium Hard Bread Stick</p>
+                    <p>View More Breadsticks Nutritional Info</p>
+                    <hr>
+                    <h3>Buns</h3>
+                    <p>Hamburger or Hotdog Rolls, Sweet Cinnamon Bun, Frosted Sweet Cinnamon Bun</p>
+                    <p>View More Buns Nutritional Info</p>
+                    <hr>
+                    <h3>Cereal</h3>
+                    <p>Cereal, Corn Flakes, Bran Flakes, Shredded Wheat Cereal (Presweetened), Puffed Rice Cereal (Fortified)</p>
+                    <p>View More Cereal Nutritional Info</p>
+                    <hr>
+                    <h3>Croissants</h3>
+                    <p>Croissant, Butter Croissants, Apple Croissants, Chocolate Croissant, Cheese Croissants</p>
+                    <p>View More Croissants Nutritional Info</p>
+                    <hr>
+                    <h3>English Muffins</h3>
+                    <p>English Muffin, Multigrain English Muffin, Wheat English Muffins, Whole Wheat English Muffin, Rye English Muffin</p>
+                    <p>View More English Muffins Nutritional Info</p>
+                    <hr>
+                    <h3>Flatbread</h3>
+                    <p>Roti, Indian Flatbread Naan, Italian Flatbread Focaccia, Fried Whole Wheat Puri or Poori Bread (Indian Puffed Bread)</p>
+                    <p>View More Flatbread Nutritional Info</p>
+                    <hr>
+                    <h3>Focaccia</h3>
+                    <p>Italian Flatbread Focaccia, Soft Bread Stick with Garlic and Parmesan Cheese</p>
+                    <p>View More Focaccia Nutritional Info</p>
+                    <hr>
+                    <h3>Garlic Bread</h3>
+                    <p>Garlic Bread, Toasted Garlic Bread, Soft Bread Stick with Garlic and Parmesan Cheese</p>
+                    <p>View More Garlic Bread Nutritional Info</p>
+                    <hr>
+                    <h3>Granola</h3>
+                    <p>Granola, Granola Cereal, Homemade Granola</p>
+                    <p>View More Granola Nutritional Info</p>
+                    <hr>
+                    <h3>Muesli</h3>
+                    <p>Muesli</p>
+                    <p>View More Muesli Nutritional Info</p>
+                    <hr>
+                    <h3>Multigrain Bread</h3>
+                    <p>Multigrain Bread, Toasted Multigrain Bread, Multigrain Bread with Raisins, Reduced Calorie High Fibre Multigrain Bread, Toasted Multigrain Bread with Raisins</p>
+                    <p>View More Multigrain Bread Nutritional Info</p>
+                    <hr>
+                    <h3>Naan</h3>
+                    <p>Indian Flatbread Naan</p>
+                    <p>View More Naan Nutritional Info</p>
+                    <hr>
+                    <h3>Oatmeal</h3>
+                    <p>Oatmeal, Instant Oatmeal, Quick Oatmeal (1 or 3 Minutes), Oatmeal with Fruit, Multigrain Oatmeal</p>
+                    <p>View More Oatmeal Nutritional Info</p>
+                    <hr>
+                    <h3>Oats</h3>
+                    <p>Oats, Oats Cereal (Instant, Dry, Fortified), Oats Cereal with Cinnamon and Spice (Instant, Dry, Fortified), Oats Cereal (without Salt, Cooked with Water, Unenriched), Whole Wheat and Rolled Oats with Nuts and Fruit Cereal (Presweetened)</p>
+                    <p>View More Oats Nutritional Info</p>
+                    <hr>
+                    <h3>Pita Bread</h3>
+                    <p>Pita Bread, White Pita Bread, Wheat Pita Bread, Toasted Pita Bread, Wheat or Cracked Wheat Pita Bread</p>
+                    <p>View More Pita Bread Nutritional Info</p>
+                    <hr>
+                    <h3>Potato Bread</h3>
+                    <p>Potato Bread, Toasted Potato Bread, Sweetpotato Bread</p>
+                    <p>View More Potato Bread Nutritional Info</p>
+                    <hr>
+                    <h3>Raisin Bread</h3>
+                    <p>Raisin Bread, Toasted Raisin Bread</p>
+                    <p>View More Raisin Bread Nutritional Info</p>
+                    <hr>
+                    <h3>Rolls</h3>
+                    <p>Dinner Rolls, Soft White Roll, Whole Wheat Dinner Rolls, Hamburger or Hotdog Rolls, French Rolls</p>
+                    <p>View More Rolls Nutritional Info</p>
+                    <hr>
+                    <h3>Rye Bread</h3>
+                    <p>Rye Bread (Reduced Calorie), Marble Rye and Pumpernickel Bread, Reduced Calorie High Fibre Rye Bread, Toasted Marble Rye and Pumpernickel Bread</p>
+                    <p>View More Rye Bread Nutritional Info</p>
+                    <hr>
+                    <h3>Scones</h3>
+                    <p>Scone, Scone with Fruit, Whole Wheat Scone</p>
+                    <p>View More Scones Nutritional Info</p>
+                    <hr>
+                    <h3>Sourdough Bread</h3>
+                    <p>Sour Dough Bread, Sour Dough Roll, Toasted Sour Dough Bread, French or Vienna Bread (Includes Sourdough), Toasted French or Vienna Bread (Includes Sourdough)</p>
+                    <p>View More Sourdough Bread Nutritional Info</p>
+                    <hr>
+                    <h3>Toast</h3>
+                    <p>Toasted White Bread, Toasted Rye Bread, Toasted Multigrain Bread, Toasted French or Vienna Bread (Includes Sourdough), Texas Toast</p>
+                    <p>View More Toast Nutritional Info</p>
+                    <hr>
+                    <h3>Tortillas</h3>
+                    <p>Tortilla, Flour Tortilla, Whole Wheat Tortilla, Corn Tortilla</p>
+                    <p>View More Tortillas Nutritional Info</p>
+                    <hr>
+                    <h3>Wheat Bread</h3>
+                    <p>Whole Wheat Bread, 100% Whole Wheat Bread, Wheat Bread (Reduced Calorie), Toasted Whole Wheat Bread, Sprouted Wheat Bread</p>
+                    <p>View More Wheat Bread Nutritional Info</p>
+                    <hr>
+                    <h3>White Bread</h3>
+                    <p>White Bread, Toasted White Bread, White with Whole Wheat Swirl Bread, White Bread (Reduced Calorie), Reduced Calorie High Fibre White Bread</p>
+                    <p>View More White Bread Nutritional Info</p>
+                    <hr>
+                    <h3>Whole Wheat Bread</h3>
+                    <p>Whole Wheat Bread, 100% Whole Wheat Bread, 100% Whole Wheat Bread with Raisins, Toasted 100% Whole Wheat Bread, Whole Wheat Bread with Nuts</p>
+                    <p>View More Whole Wheat Bread Nutritional Info</p>
+                    <hr>
+                    <h3>Wraps</h3>
+                    <p>Flour Tortilla, Corn Tortilla, Whole Wheat Tortilla, Wrap Filled with Vegetables, Meat, Poultry or Fish, Vegetables Sandwich Wrap</p>
+                    <p>View More Wraps Nutritional Info</p>
+                    <hr>
+                </div>
+            </div>
+        </div>
+
+        <div id="right_cell">
+            <p style="margin-left: 2%;"><i>Food Search</i></p>
+            <div>
+               <input style="width: 80%;" type="text" placeholder="Enter Search">
+               <img src="https://a.ftscrt.com/static/images/def20/But_Search_Blue_pressed.png" alt="">
+            </div>
+            
+        </div>
+    </div>
+
+    <div id="logo">
+        <div>
+            <p>Get the app</p>
+            <div class="appStore">
+                <a href="https://apps.apple.com/in/app/calorie-counter-by-fatsecret/id347184248"><img src="https://a.ftscrt.com/static/images/mobi/ios/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt=""></a> 
+                <a href="https://play.google.com/store/apps/details?id=com.fatsecret.android"><img src="https://a.ftscrt.com/static/images/mobi/android/en_get_2.svg" alt=""></a> 
+             </div>
+        </div>
+    </div>
+
+    <div id="contactUs">
+      <div> 
+         <a href="https://www.facebook.com/fatsecret/"><img src="https://a.ftscrt.com/static/images/social/but_social_facebook.svg" alt=""></a>
+         <a href="https://www.instagram.com/fatsecret_app/"><img src="https://a.ftscrt.com/static/images/social/but_social_instagram.svg" alt=""></a>
+         <a href="https://twitter.com/FatSecret"><img src="https://a.ftscrt.com/static/images/social/but_social_twitter.svg" alt=""></a>
+        
+        </div>
+        <div>
+            <p>BRAND LIST</p>
+            <p>CONTACT US</p>
+          <div id="tANDc">
+             <p>FIND PEOPLE</p>
+             <p>|</p>
+             <p>TERMS AND CONDITIONS</p>
+             <p>|</p>
+             <p>PRIVACY POLICY</p>
+             <p>|</p>
+             <p>REPORT ABUSE</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="base">
+       <p>© 2022 FatSecret. All rights reserved</p>
+        <div>
+           <p>INDIA</p>
+           <img style="height: 60%; margin:10px" src="https://a.ftscrt.com/static/images/markets/smallFlags/IN.png" alt="">
+        </div>
+    </div>   
+</body>
+</html>

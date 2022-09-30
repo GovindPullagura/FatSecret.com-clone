@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        a {
+            color: white;
+        }
+        a:link {
+            text-decoration: none;
+        }
+        a:link :hover{
+            text-decoration: underline;
+        }
+        body{
+            margin: 0%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #reg {
+            background-color: rgb(51,179,75);
+            width: 100%;
+        }
+        #reg>div{
+            display: flex;
+            margin-left: 78%;
+            margin-right: 12%;
+            justify-content: space-between;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        #reg p{
+            color: white;
+
+        }
+        #reg a:link{
+            text-decoration: none;
+        }
+        #reg a:hover{
+            text-decoration: underline;
+        }
+
+        #navbarHome {
+            width: 100%;
+            background-color: rgb(238,241,233);
+        }
+        #navbarHome>div {
+            width: 75%;
+            margin: auto;
+        }
+        #search_bar{
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #search_bar>div:nth-child(1)>p{
+            text-align: right;
+            color: rgb(51,179,75);
+            margin-top: -5%;
+            font-size: 13px;
+            font-weight: bold;
+        }
+        #search_bar>div:nth-child(2){
+            display: flex;
+            justify-content: center;
+            height: 30px;
+        }
+        #search_bar input{
+            width: 300px;
+            margin-right: 5px;
+            background-color: rgb(238,241,233);
+            border: 1px solid rgb(170, 171, 170);
+        }
+        #navbarHome>#navbar{
+            width: 80%;
+            display: flex;
+            height: 20px;
+            text-align: center;
+            margin-top: 30px;
+        }
+        #navbar a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 10px;
+            font-weight: bold;
+            color: rgb(147,169,196);
+            width: 16%;
+            border: 1px solid rgb(170, 171, 170);
+            margin-bottom: 0px;
+        }
+        #navbar>div:hover {
+            color: rgb(66,133,244);
+        }
+        #container {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        #left_cell {
+            width :65%;
+            /* border: 1px solid red; */
+        }
+        #right_cell {
+            width: 30%;
+            margin-right: 3% ;
+            height: 100px;
+            background-color: rgb(238,241,233);
+            /* text-align: center; */
+        }
+        #right_cell>div {
+            display: flex;
+            justify-content: space-around;
+        }
+        #beans {
+            display: flex;
+            justify-content: space-around;
+            border: 3px solid green;
+            padding: 5px 0px;
+        }
+
+        #beans h2 {
+            margin-right: 45%;
+        }
+        #beans+div {
+            display: flex;
+            margin-top: 20px;
+        }
+        #menu {
+            width: 25%;
+            padding: 10px;
+            background-color: rgb(235,250,252);
+            height: 40%;
+        }
+        #menu div {
+            display: flex;
+        }
+        #menu p{
+            margin-left: 10%;
+            color: rgb(11,141,196);
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        #beansList {
+            margin-left: 20px;
+            width: 70%;
+        }
+        #beansList p {
+            font-size: 14px;
+            color:rgb(11,141,196);
+        }
+        #beansList p+p{
+            text-align: right;
+            font-size: 10px;
+            font-weight: bold;
+        }
+        #logo {
+            width: 100%;
+            padding-top: 10px;
+            text-align: center;
+        }
+        #logo img {
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        #logo p {
+            margin-bottom: -20px;
+            font-weight:bold;
+        }
+        #contactUs{
+            width: 100%;
+            padding-top: 10px;
+            background-color: rgb(51,51,51);
+            color: white;
+            text-align: center;
+        }
+        #contactUs img {
+            margin-right: 20px;
+        }
+        #contactUs>div:nth-child(1){
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        #tANDc{
+            width: 50%;
+            margin: auto;
+            display: flex;
+            justify-content: space-evenly;
+            color: rgb(192,192,192);
+            font-size: 13px;
+        }
+        #base {
+            width: 100%;
+            padding-top: 10px;
+            background-color: rgb(50,180,76);
+            text-align: center;
+            color: white;
+        }
+        #base>div {
+            display: flex;
+            justify-content: right;
+            margin:-3% 10% auto auto;
+            font-size: 13px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="reg">
+        <div>
+          <a href="index.html"><p>Register</p></a>
+          <p>|</p>
+          <a href="signIn.html"><p>Sign In</p></a>
+        </div>
+    </div>
+
+    <div id="navbarHome">
+        <div id="search_bar">
+            <div>
+                <a href="index.html"><img src="https://a.ftscrt.com/static/images/def20/Fatsecret_logo.png" alt=""></a>
+                <p>INDIA</p>
+            </div>
+           <div>
+              <img src="https://a.ftscrt.com/static/images/def20/quicksearch/search_foods.png" alt="">
+              <input type="text" placeholder="Enter Search">
+              <img src="https://a.ftscrt.com/static/images/def20/But_Search_Grey_pressed.png" alt="">
+           </div>
+        </div>
+        <div id="navbar">
+            <a href="signIn.html"><div>MY FATSECRET</div></a>
+            <a href="foods.html"><div>FOODS</div></a> 
+            <a href="recipes.html"><div>RECIPES</div></a>
+            <a href="fitness.html"><div>FITNESS</div></a>
+            <a href="recipes.html"><div>COMMUNITY</div></a>
+            <a href=""><div></div></a>
+        </div>
+    </div>
+
+    <div id="container">
+        <div id="left_cell">
+            <div id="beans">
+                <img style="height:9%; width:9%; margin-top: 10px; " src="https://a.ftscrt.com/static/images/food_groups/beans_legumes.jpg" alt="">
+                 <h2>Beans And Legumes</h2>
+            </div>
+
+            <div>
+                <div id="menu">
+                    <div>
+                        <img style="width: 25%; height: 20%; margin-top: 10px;" src="https://a.ftscrt.com/static/images/box/recipesicon_trans.gif" alt="">
+                        <h3>Foods</h3>
+                    </div>
+                    <a href="beans.html"><p>Beans & Legumes</p></a> 
+                    <a href="breads.html"><p>Breads & Cereals</p></a> 
+                    <a href="beans.html"><p>Cheese, Milk & Dairy</p></a>     
+                    <a href="breads.html"><p>Drinks</p></a> 
+                    <a href="beans.html"><p>Eggs</p></a> 
+                    <a href="breads.html"><p>Fast Food</p></a> 
+                    <a href="beans.html"><p>Fish & Seafood</p></a>
+                    <a href="breads.html"><p>Fruit</p></a>
+                    <a href="breads.html"><p>Meat</p></a>
+                    <a href="beans.html"><p>Nuts & Seeds</p></a>
+                    <a href="breads.html"><p>Pasta, Rice & Noodles</p></a>
+                    <a href="beans.html"><p>Salads</p></a>
+                    <a href="breads.html"><p>Sauces, Spices & Spreads</p></a>
+                    <a href="beans.html"><p>Snacks</p></a>
+                    <a href="breads.html"><p>Soups</p></a>
+                    <a href="beans.html"><p>Sweets & Desserts</p></a>
+                    <a href="breads.html"><p>Vegetables</p></a>
+                    <a href="beans.html"><p>Other</p></a>
+                </div>
+
+                <div id="beansList">
+                    <h3>Baked Beans</h3>
+                    <p>Baked Beans, Vegetarian Baked Beans, Baked Beans with Pork (Canned), Boston Baked Beans, Low Sodium Baked Beans</p>
+                    <p>View More Baked Beans Nutritional Info</p>
+                    <hr>
+                    <h3>Beans</h3>
+                    <p>Green Snap Beans, Baked Beans, Black Beans (Canned), Refried Beans (Canned), Red Kidney Beans (Canned)</p>
+                    <p>View More Beans Nutritional Info</p>
+                    <hr>
+                    <h3>Black Beans</h3>
+                    <p>Black Beans (Canned), Black Beans (Mature Seeds, with Salt, Cooked, Boiled), Black Beans (Mature Seeds, without Salt, Cooked, Boiled)</p>
+                    <p>View More Black Beans Nutritional Info</p>
+                    <hr>
+                    <h3>Chickpeas</h3>
+                    <p>Chickpeas (Mature Seeds, Canned), Cooked Dry Chickpeas, Chickpeas, Chickpeas (Mature Seeds, without Salt, Cooked, Boiled), Cooked Dry Chickpeas (Fat Not Added in Cooking)</p>
+                    <p>View More Chickpeas Nutritional Info</p>
+                    <hr>
+                    <h3>Green Beans</h3>
+                    <p>Green Snap Beans, Green Snap Beans (Frozen), Green String Beans, Green Snap Beans (Drained Solids, Canned), Green Snap Beans (Solids and Liquids, Canned)</p>
+                    <p>View More Green Beans Nutritional Info</p>
+                    <hr>
+                    <h3>Kidney Beans</h3>
+                    <p>Kidney Beans (Canned), Red Kidney Beans (Canned), Kidney Beans (without Salt, Cooked, Boiled), Red Kidney Beans (with Salt, Cooked, Boiled), Cooked Dry Red Kidney Beans</p>
+                    <p>View More Kidney Beans Nutritional Info</p>
+                    <hr>
+                    <h3>Lentils</h3>
+                    <p>Cooked Lentils, Lentils, Lentils (Sprouted), Pink Lentils</p>
+                    <p>View More Lentils Nutritional Info</p>
+                    <hr>
+                    <h3>Lima Beans</h3>
+                    <p>Lima Beans, Large Lima Beans (Mature Seeds), Baby Lima Beans (Mature Seeds), Large Lima Beans (Mature Seeds, without Salt, Cooked, Boiled), Baby Lima Beans (Mature Seeds, without Salt, Cooked, Boiled)</p>
+                    <p>View More Lima Beans Nutritional Info</p>
+                    <hr>
+                    <h3>Pinto Beans</h3>
+                    <p>Pinto Beans (Mature Seeds, Canned), Cooked Pinto, Calico or Red Beans, Pinto Beans (Mature Seeds, Sprouted), Pinto Beans (Mature Seeds), Pinto Beans (Immature Seeds, Frozen)</p>
+                    <p>View More Pinto Beans Nutritional Info</p>
+                    <hr>
+                    <h3>Quinoa</h3>
+                    <p>Quinoa (Cooked), Quinoa</p>
+                    <p>View More Quinoa Nutritional Info</p>
+                    <hr>
+                    <h3>Tofu</h3>
+                    <p>Firm Silken Tofu, Soft Silken Tofu, Fried Tofu, Extra Firm Silken Tofu, Lite Firm Silken Tofu</p>
+                    <p>View More Tofu Nutritional Info</p>
+                    <hr>
+                </div>
+            </div>
+        </div>
+
+        <div id="right_cell">
+            <p style="margin-left: 2%;"><i>Food Search</i></p>
+            <div>
+               <input style="width: 80%;" type="text" placeholder="Enter Search">
+               <img src="https://a.ftscrt.com/static/images/def20/But_Search_Blue_pressed.png" alt="">
+            </div>
+            
+        </div>
+    </div>
+
+    <div id="logo">
+        <div>
+            <p>Get the app</p>
+            <div class="appStore">
+                <a href="https://apps.apple.com/in/app/calorie-counter-by-fatsecret/id347184248"><img src="https://a.ftscrt.com/static/images/mobi/ios/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt=""></a> 
+                <a href="https://play.google.com/store/apps/details?id=com.fatsecret.android"><img src="https://a.ftscrt.com/static/images/mobi/android/en_get_2.svg" alt=""></a> 
+             </div>
+        </div>
+    </div>
+
+    <div id="contactUs">
+      <div> 
+         <a href="https://www.facebook.com/fatsecret/"><img src="https://a.ftscrt.com/static/images/social/but_social_facebook.svg" alt=""></a>
+         <a href="https://www.instagram.com/fatsecret_app/"><img src="https://a.ftscrt.com/static/images/social/but_social_instagram.svg" alt=""></a>
+         <a href="https://twitter.com/FatSecret"><img src="https://a.ftscrt.com/static/images/social/but_social_twitter.svg" alt=""></a>
+        
+        </div>
+        <div>
+            <p>BRAND LIST</p>
+            <p>CONTACT US</p>
+          <div id="tANDc">
+             <p>FIND PEOPLE</p>
+             <p>|</p>
+             <p>TERMS AND CONDITIONS</p>
+             <p>|</p>
+             <p>PRIVACY POLICY</p>
+             <p>|</p>
+             <p>REPORT ABUSE</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="base">
+       <p>© 2022 FatSecret. All rights reserved</p>
+        <div>
+           <p>INDIA</p>
+           <img style="height: 60%; margin:10px" src="https://a.ftscrt.com/static/images/markets/smallFlags/IN.png" alt="">
+        </div>
+    </div>   
+</body>
+</html>
