@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FatSecret</title>
     <style>
         a:link {
             text-decoration: none;
@@ -17,9 +17,9 @@
         }
         #head{
             width: 100%;
-            background-color: orange;
             margin-bottom: 0%;
             padding: 10px;
+            background-image:url('https://a.ftscrt.com/static/images/splash/Sunrise_BG_01.jpg');background-size:cover;background-repeat:no-repeat;background-position:center top;
         }
         #navbar{
             width: 80%;
@@ -27,11 +27,15 @@
             display: flex;
             justify-content: space-between;
         }
+        #menubar a{
+            color: white;
+        }
         #navbar>div {
             display: flex;
             justify-content: space-between;
             /* border: 1px solid red; */
             width: 45%;
+            color: white;
         }
         #navbar>div+div{
             justify-content: right;
@@ -39,6 +43,7 @@
         #title {
             width: 80%;
             margin: auto;
+            color: white;
         }
         #title>#h2{
             font-size: 45px;
@@ -196,11 +201,11 @@
 <body>
     <div id="head">
         <div id="navbar">
-            <div>
-              <p>Foods</p>
-              <p>Recipes</p>
-              <p>Fitness</p>
-              <p>Community</p>
+            <div id="menubar">
+              <a href="foods.html"><p>Foods</p></a>
+              <a href="recipes.html"><p>Recipes</p></a> 
+              <a href="fitness.html"><p>Fitness</p></a>
+              <a href="recipes.html"><p>Community</p></a>
             </div>
             <div>
                 <p>INDIA</p>
@@ -210,8 +215,8 @@
         <div id="title">
             <p id="h2">Your Key to Success</p>
             <img style="margin-bottom:30px ;" src="https://a.ftscrt.com/static/images/splash/FS_Logo_SplashScreen.png" alt=""><br>
-            <a href="signIn.html"><button id="start">Start for free</button></a>
-            <p>Already a Member? <span style="font-weight: bold;">Sign In</span></p>
+            <a href="signup.html"><button id="start">Start for free</button></a>
+            <p>Already a Member? <span><a style="font-weight: bold; color: white;" href="signIn.html">Sign In</a></span></p>
             <p>Start losing weight the healthy way with easy to use <br>
                 apps, online tools and support.</p>
         </div>
@@ -314,7 +319,7 @@
                 <h4>FatSecret is 100% free</h4>
             </div>
             <div>
-                <button id="start">Start for free</button>
+                <a href="signup.html"><button id="start">Start for free</button></a>
                 <p>Already a Member? <a style="font-weight: bold; color: white;" href="signIn.html">Sign In</a></span></p>
             </div>
         </div>
