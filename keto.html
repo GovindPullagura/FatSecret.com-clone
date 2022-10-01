@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         a {
+            color: white;
+        }
+        a:link {
+            text-decoration: none;
+        }
+        a:link :hover{
+            text-decoration: underline;
+        }
+        body{
+            margin: 0%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #reg {
+            background-color: rgb(51,179,75);
+            width: 100%;
+        }
+        #reg>div{
+            display: flex;
+            margin-left: 78%;
+            margin-right: 12%;
+            justify-content: space-between;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        #reg p{
+            color: white;
+        }
+        #reg a:link{
+            text-decoration: none;
+        }
+        #reg a:hover{
+            text-decoration: underline;
+        }
+
+        #navbarHome {
+            width: 100%;
+            background-color: rgb(238,241,233);
+        }
+        #navbarHome>div {
+            width: 75%;
+            margin: auto;
+        }
+        #search_bar{
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        #search_bar>div:nth-child(1)>p{
+            text-align: right;
+            color: rgb(51,179,75);
+            margin-top: -5%;
+            font-size: 13px;
+            font-weight: bold;
+        }
+        #search_bar>div:nth-child(2){
+            display: flex;
+            justify-content: center;
+            height: 30px;
+        }
+        #search_bar input{
+            width: 300px;
+            margin-right: 5px;
+            background-color: rgb(238,241,233);
+            border: 1px solid rgb(170, 171, 170);
+        }
+        #navbarHome>#navbar{
+            width: 80%;
+            display: flex;
+            height: 20px;
+            text-align: center;
+            margin-top: 30px;
+        }
+        #navbar a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 10px;
+            font-weight: bold;
+            color: rgb(147,169,196);
+            width: 16%;
+            border: 1px solid rgb(170, 171, 170);
+            margin-bottom: 0px;
+        }
+        #navbar>div:hover {
+            color: rgb(66,133,244);
+        }
+        #container {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            margin-top: 20px;
+        }
+        #left_cell {
+            width :65%;
+            display: flex;
+        }
+        #right_cell{
+            width: 25%;
+            margin-left: 3%;
+        }
+        #des {
+            width: 22%;
+        }
+        .add{
+            font-size: 13px;
+            color: rgb(13,142,196);
+            margin-top: 0%;
+        }
+        .bgTeal{
+            background-color: rgb(235,250,252);
+            padding: 3px;
+            margin-top: 10px;
+        }
+        #directions{
+            width: 70%;
+            margin-left: 2%;
+        }
+        #directions li {
+            font-size: 13px;
+            margin-bottom: 5px;
+        }
+        .teal {
+            color: rgb(13,142,196);
+            font-size: 13px;
+            margin: 3px;
+        }
+        #new {
+            background-color: rgb(238,241,233);
+            padding: 10px;
+        }
+        #new p{
+            font-size: 13px;
+            margin:5px 0 5px 0 ;
+        }
+        .item{
+            font-size: 12px;
+            color:rgb(13,142,196) ;
+            display: inline-flex;
+            justify-content: space-between;
+        }
+        .chef {
+            display: flex;
+            justify-content: space-between;
+        }
+        #new+div {
+            background-color: rgb(252,243,228);
+            padding:0 5px 5px 5px;
+        }
+        #new+div li{
+            font-size: 13px;
+        }
+        #nutrition {
+            width: 80%;
+            margin:20px auto;
+            border: 2px solid gray;
+        }
+        #nutrition div{
+            display: flex;
+            justify-content: space-between;
+        }
+        #nutrition p{
+            margin: 5px;
+            font-size: 13px;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        #logo {
+            width: 100%;
+            padding-top: 10px;
+            text-align: center;
+        }
+        #logo img {
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+        #logo p {
+            margin-bottom: -20px;
+            font-weight:bold;
+        }
+        #contactUs{
+            width: 100%;
+            padding-top: 10px;
+            background-color: rgb(51,51,51);
+            color: white;
+            text-align: center;
+        }
+        #contactUs img {
+            margin-right: 20px;
+        }
+        #contactUs>div:nth-child(1){
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        #tANDc{
+            width: 50%;
+            margin: auto;
+            display: flex;
+            justify-content: space-evenly;
+            color: rgb(192,192,192);
+            font-size: 13px;
+        }
+        #base {
+            width: 100%;
+            padding-top: 10px;
+            background-color: rgb(50,180,76);
+            text-align: center;
+            color: white;
+        }
+        #base>div {
+            display: flex;
+            justify-content: right;
+            margin:-3% 10% auto auto;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div id="reg">
+        <div>
+          <a href="index.html"><p>Register</p></a>
+          <p>|</p>
+          <a href="signIn.html"><p>Sign In</p></a>
+        </div>
+    </div>
+
+    <div id="navbarHome">
+        <div id="search_bar">
+            <div>
+                <a href="index.html"><img src="https://a.ftscrt.com/static/images/def20/Fatsecret_logo.png" alt=""></a>
+                <p>INDIA</p>
+            </div>
+           <div>
+              <img src="https://a.ftscrt.com/static/images/def20/quicksearch/search_foods.png" alt="">
+              <input type="text" placeholder="Enter Search">
+              <img src="https://a.ftscrt.com/static/images/def20/But_Search_Grey_pressed.png" alt="">
+           </div>
+        </div>
+        <div id="navbar">
+            <a href="signIn.html"><div>MY FATSECRET</div></a>
+            <a href="foods.html"><div>FOODS</div></a> 
+            <a href="recipes.html"><div>RECIPES</div></a>
+            <a href="fitness.html"><div>FITNESS</div></a>
+            <a href="recipes.html"><div>COMMUNITY</div></a>
+            <a href=""><div></div></a>
+        </div>
+    </div>
+
+    <div id="container">
+        <div id="left_cell">
+            <div id="des">
+                <img style="width: 100%;" src="https://m.ftscrt.com/static/recipe/a7760c7d-eb16-46d5-86c1-ecb974be26ab.jpg" alt="">
+                <div style="display: flex;margin-bottom:0%">
+                    <img style="height:15px; margin:0 5px 0 5px" src="https://a.ftscrt.com/static/images/icons/add_b.png" alt="">
+                    <p class="add">Add to my Cook Book</p>
+                </div>
+                <div style="display: flex; margin-top:0%">
+                    <img style="height:15px;margin:0 5px 0 5px " src="https://a.ftscrt.com/static/images/icons/cal_bp.png" alt="">
+                    <p class="add">Add to Food Dairy</p>
+                </div>
+                <div class="bgTeal">
+                    <h5 style="margin-bottom: 5px">Yields:</h5>
+                    <p style="font-size:12px;margin-top: 0%; ">2 serving(s)</p>
+                </div>
+                <div class="bgTeal">
+                    <h5 style="margin-bottom: 5px">Preparation Time:</h5>
+                    <p style="font-size:12px;margin: 0; ">10 mins</p>
+                    <h5 style="margin:5px 0 5px 0">Cooking<br>Time:</h5>
+                    <p style="font-size:12px;margin: 0%; ">15 mins</p>
+                </div>
+                <div class="bgTeal">
+                    <h5 style="margin-bottom: 5px">Meal type</h5>
+                    <p style="font-size:12px;margin: 0%; ">Main Dishes</p>
+                    <p style="font-size:12px;margin: 0%; ">Lunch</p>
+                </div>
+                <div class="bgTeal">
+                    <h5 style="margin-bottom: 5px">Rating:</h5>
+                    <img src="https://a.ftscrt.com/static/images/stars/big-four-star.gif" alt="">
+                    <p style="font-size:12px;margin: 0%;color: gray;">FatSecret Members</p>
+                    <p style="font-size:12px;margin: 0%;color: gray;">Average Rating</p>
+                </div>
+            </div>
+            
+            <div id="directions">
+                <div style="display: flex; justify-content:space-between;">
+                    <h3>Keto Alfredo Pasta</h3>
+                    <p style="font-size: 13px; margin-top:25px">by member: <span style="color: rgb(13,142,196);">Dishalijain</span>  <img src="https://m.ftscrt.com/static/member/_taco_shared_tiny.jpg" alt=""></p>
+                </div>
+                <hr>
+                <p>A low carb recipe with zucchini.</p>
+                <h4 style="margin: 0;">Ingredients</h4>
+                <hr>
+                <p class="teal">125 g fresh cream</p>
+                <p class="teal">3 tbsps butter (salted)</p>    
+                <p class="teal">120 g cheddar cheese</p>    
+                <p class="teal">1 tsp leaves basil (dried)</p>   
+                <p class="teal">1/4 tsp chilli powder</p> 
+                <p class="teal"> 1/2 tsp garlic powder</p>   
+                <p class="teal">1/2 tsp ground oregano</p>    
+                <p class="teal">1/2 tsp thyme</p>    
+                <p class="teal"> 250g zucchini</p>
+
+                <h4 style="margin:10px 0 0 0">Directions</h4>
+                <hr>
+                <ol type = '1'>
+                    <li>Make julienne of zucchini in the shape of noodles.</li>
+                    <li>In a pan take 1tbsp of salted butter and saute the zucchini for 3-4 minutes.</li>
+                    <li>Take out the zucchini in a bowl</li>
+                    <li>For sauce, take 2 tbsp of salted butter then add fresh cream and stir.</li>    
+                    <li>Add preferably cheddar cheese or any cheese of your choice and stir continuously.</li>    
+                    <li>Add garlic powder and herbs like oregano thyme and chilli flakes.</li>   
+                    <li>Cook the sauce on medium flame for 3-4 minutes.</li>   
+                    <li>Pour the sauce on zucchini noodles and garnish with basil leaves.</li>
+                </ol>
+                <div class="bgTeal">
+                    <p style="font-weight:bold; font-size:13px; margin-left: 30px;">1 members have added this recipe to their cookbook.</p>
+                </div>
+                
+            </div>
+        </div>
+
+        <div id="right_cell">
+            <div id="new">
+               <h4>Find More Recipes</h4> 
+               <p style="color: gray; font-weight:bold;">Filter by Meal Type</p>
+               <hr>
+               <p class="teal">Main Dishes</p> 
+               <p class="teal">Lunch</p> 
+                
+               <p style="color: gray; font-weight:bold;" >Newest Recipes</p> 
+               <hr>
+               <div class="chef">
+                <p class="item">Tuna Salad</p> 
+                <p style="font-size: 12px;">by member: nishna</p>
+               </div>
+               <p>Tasty and healthy salad made in minutes with basic ingredients.</p>
+               <div class="chef">
+                <p class="item">Buta Dali Alu Tarkari</p> 
+                <p style="font-size: 12px;">by member: ChimS 1491</p>
+               </div>
+               <p>Buta dali mix with aloo.</p> 
+               <div class="chef">
+                <p class="item">Green Juice</p>
+                <p style="font-size: 12px;">by member: abhishekubale</p>
+               </div>
+               <p>Healthy vegetable and fruit juice.</p>
+               <div class="chef">
+                <p class="item">Quinoa Spinach Broccoli</p> 
+                <p style="font-size: 12px;">by member: shaik.zoya18</p> 
+               </div>
+               <p>Healthy quinoa with vegetables and spices.</p>
+            </div>
+            <div>
+                <h4>Nutritional Summary:</h4>
+                <li>There are 575 calories in 1 serving of Keto Alfredo Pasta.</li>
+                <li>Calorie Breakdown: 82% fat, 6% carbs, 12% prot.</li>
+            </div>
+
+            <div style="margin-top:20px;background-color:rgb(238,241,233);padding: 5px;">
+                <div id="nutrition">
+                    <h3>Nutrition Facts</h3>
+                    <hr>
+                    <div>
+                        <p>Serving Size</p>
+                        <p>per serve</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <p class="bold">Energy</p>
+                        <p>2404 kj</p>
+                    </div>
+                    <p style="text-align: right;">574 kcal</p>
+                    <hr>
+                    <div class="bold">
+                        <p>Fat</p>
+                        <p>53.14g</p>
+                    </div>
+                    <div>
+                        <p>Saturated Fat</p>
+                        <p>33.667g</p>
+                    </div>
+                    <div>
+                        <p>Trans Fat</p>
+                        <p>0.625g</p>
+                    </div>
+                    <div>
+                        <p>Monounsaturated Fat</p>
+                        <p>10.146g</p>
+                    </div>
+                    <div>
+                        <p>Polyunsaturated Fat</p>
+                        <p>1.366g</p>
+                    </div>
+                    <hr>
+                    <div class="bold">
+                        <p>Carbohydrates</p>
+                        <p>8.22g</p>
+                    </div>
+                    <div>
+                        <p>Sugars</p>
+                        <p>2.7g</p>
+                    </div><hr>
+                    <div>
+                        <p>Fibres</p>
+                        <p>2g</p>
+                    </div><hr>
+                    <div class="bold">
+                        <p>Protein</p>
+                        <p>18.15g</p>
+                    </div><hr>
+                    <div>
+                        <p>Sodium</p>
+                        <p>511mg</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <p>Cholestrol</p>
+                        <p>109mg</p>
+                    </div><hr>
+                    <div>
+                        <p>Potassium</p>
+                        <p>426mg</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div id="logo">
+        <div>
+            <p>Get the app</p>
+            <div class="appStore">
+                <a href="https://apps.apple.com/in/app/calorie-counter-by-fatsecret/id347184248"><img src="https://a.ftscrt.com/static/images/mobi/ios/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt=""></a> 
+                <a href="https://play.google.com/store/apps/details?id=com.fatsecret.android"><img src="https://a.ftscrt.com/static/images/mobi/android/en_get_2.svg" alt=""></a> 
+             </div>
+        </div>
+    </div>
+
+    <div id="contactUs">
+      <div> 
+         <a href="https://www.facebook.com/fatsecret/"><img src="https://a.ftscrt.com/static/images/social/but_social_facebook.svg" alt=""></a>
+         <a href="https://www.instagram.com/fatsecret_app/"><img src="https://a.ftscrt.com/static/images/social/but_social_instagram.svg" alt=""></a>
+         <a href="https://twitter.com/FatSecret"><img src="https://a.ftscrt.com/static/images/social/but_social_twitter.svg" alt=""></a>
+        
+        </div>
+        <div>
+            <p>BRAND LIST</p>
+            <p>CONTACT US</p>
+          <div id="tANDc">
+             <p>FIND PEOPLE</p>
+             <p>|</p>
+             <p>TERMS AND CONDITIONS</p>
+             <p>|</p>
+             <p>PRIVACY POLICY</p>
+             <p>|</p>
+             <p>REPORT ABUSE</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="base">
+       <p>© 2022 FatSecret. All rights reserved</p>
+        <div>
+           <p>INDIA</p>
+           <img style="height: 60%; margin:10px" src="https://a.ftscrt.com/static/images/markets/smallFlags/IN.png" alt="">
+        </div>
+    </div>
+</body>
+</html>
+
+
+
