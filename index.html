@@ -115,6 +115,7 @@
             color: white;
             background-color: rgb(147,173,210);
             padding: 10px;
+            width: 100%;
         }
         #connected>div{
             width: 80%;
@@ -195,7 +196,45 @@
             margin:-3% 10% auto auto;
             font-size: 13px;
         }
-
+    @media all and (max-width: 750px) and (min-width:200px) {
+        #navbar{
+            width: 90%;
+        }
+        #navbar>div {
+            width: 50%;
+        }
+        #title {
+            width: 90%;
+        }
+        .inner_content{
+            width: 90%;
+        }
+        #whiter {
+            width: 90%;
+        }
+        #whiter>div>p:nth-child(1){
+            font-size: 35px;
+        }
+        #connected>div{
+            width: 90%;
+            justify-content: space-between;
+        }
+        #SignUp>div{
+            width: 90%;
+            padding: 30px;
+        }
+        #logo img {
+            width: 70%;
+        }
+        #logo .appStore {
+            width: 50%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    
+}
     </style>
 </head>
 <body>
@@ -245,7 +284,7 @@
             </div>
             <div> 
                 <p>How FatSecret Works!</p>
-                <p style="line-height: 25px;">People who track food achieve more than double the average weight loss and <br> members lose weight 3x faster when doing it with friends. FatSecret combines <br> these to create the most powerful solution for healthy, sustainable weight loss.</p>
+                <p style="line-height: 25px;">People who track food achieve more than double the average weight loss and members lose weight 3x faster when doing it with friends. FatSecret combines these to create the most powerful solution for healthy, sustainable weight loss.</p>
             </div>
         </div>
     </div>

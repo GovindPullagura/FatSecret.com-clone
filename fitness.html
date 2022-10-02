@@ -52,23 +52,19 @@
         }
         #search_bar{
             padding-top: 20px;
-            display: flex;
-            justify-content: space-between;
+            /* display: flex; */
+            /* justify-content: space-between; */
         }
-        #search_bar>div:nth-child(1)>p{
-            text-align: right;
-            color: rgb(51,179,75);
-            margin-top: -5%;
-            font-size: 13px;
-            font-weight: bold;
+        #search_bar>div:nth-child(1) img{
+            width: 35%;
         }
         #search_bar>div:nth-child(2){
             display: flex;
-            justify-content: center;
+            justify-content: left;
             height: 30px;
         }
         #search_bar input{
-            width: 300px;
+            width: 20%;
             margin-right: 5px;
             background-color: rgb(238,241,233);
             border: 1px solid rgb(170, 171, 170);
@@ -200,7 +196,34 @@
             margin:-3% 10% auto auto;
             font-size: 13px;
         }
-        
+        @media all and (max-width: 900px) and (min-width:551px) {
+            #navbarHome>div {
+            width: 85%;
+            }
+           #navbarHome>#navbar{
+            width: 90%;
+           }
+            #container {
+            width: 90%;
+            }
+            #left_cell {
+            width :75%;
+        }
+    }
+        @media all and (max-width: 550px) and (min-width:200px){
+           #navbarHome>div {
+             width: 95%;
+            }
+            #navbarHome>#navbar{
+              width: 100%;
+            }
+            #container {
+             width: 100%;
+            }
+            #left_cell {
+                width: 95%;
+            }
+   }
         
     </style>
 </head>
@@ -217,7 +240,6 @@
         <div id="search_bar">
             <div>
                 <a href="index.html"><img src="https://a.ftscrt.com/static/images/def20/Fatsecret_logo.png" alt=""></a>
-                <p>INDIA</p>
             </div>
            <div>
               <img src="https://a.ftscrt.com/static/images/def20/quicksearch/search_foods.png" alt="">
