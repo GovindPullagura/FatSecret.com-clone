@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign In</title>
     <style>
         a {
             color: white;
@@ -231,15 +231,15 @@
             <a href="https://www.facebook.com/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjY0MzcyNjQ5LCJjYWxsc2l0ZV9pZCI6MjY5NTQ4NDUzMDcyMDk1MX0%3D"><button id="fb">Continue with Facebook</button></a><br>
             <a href="https://accounts.google.com/v3/signin/identifier?dsh=S-284333031%3A1664372902737148&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&rip=1&sacu=1&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=AQDHYWqG09AOrx1Dwnuc99i0mOVzEF4U2P8T_rlhGZyWrKWIyCM1Jh7DMh3ruq_3AhWcpIZ-sQ2anQ"><button id="google">Continue with Google</button></a><br>
             <p>or sign in with your FatSecret account</p>
-            <input type="text" placeholder="Email or Member Name">
+            <input type="text" placeholder="Email or Member Name" id="input">
             <div style="display: flex; justify-content: space-between;">
-                <input id="password" type="text" placeholder="Password">
+                <input id="password" type="password" placeholder="Password">
                 <button id="signin">Sign In</button>
             </div>
             <p style="font-size: 13px; color:rgb(77, 77, 181)">Forgot Password?</p>
             
             <h3>Register Today! 100% free!</h3>
-            <h4>Become a member! <span><a href="index.html">Create Account</a></span></h4>
+            <h4>Become a member! <span><a style="color: rgb(11,141,196);" href="index.html">Create Account</a></span></h4>
         </div>
     </div>
 
@@ -285,3 +285,28 @@
     </div>
 </body>
 </html>
+
+<script>
+    let form = document.querySelector('#form');
+    let btn = document.querySelector('#signin');
+    btn.addEventListener('click', toDo);
+    let data = JSON.parse(localStorage.getItem('credentials'));
+
+    function toDo(event){
+        event.preventDefault();
+        if (form.querySelector('#input').value === '' || form.querySelector('#password').value === ''){
+
+            alert('Please fill all the details.')
+        }else {
+            if ((form.querySelector('#input').value === data.name || form.querySelector('#input').value === data.email) && form.querySelector('#password').value === data.password){
+            alert('Login Successful');
+            form.querySelector('#input').value = '';
+            form.querySelector('#password').value = '';
+        }
+        else {
+            alert ('Incorrect login details!')
+        }
+        }
+        
+    }
+</script>

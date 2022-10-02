@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fitness</title>
+    <title>Sign Up</title>
     <style>
-         a {
+        a {
             color: white;
         }
         a:link {
@@ -94,79 +94,41 @@
         #navbar>div:hover {
             color: rgb(66,133,244);
         }
-        #container {
-            width: 80%;
-            margin: auto;
-            display: flex;
-            justify-content: space-between;
-            margin-top: 20px;
-        }
-        #left_cell {
-            width :65%;
-            /* border: 1px solid red; */
-        }
-        #fitness {
-            display: flex;
-            justify-content: left;
-            border: 4px solid green;
-            padding: 10px;
-        }
-        #fitness>div {
-            color: rgb(94,94,83);
-        }
-        #finder {
-            width: 91%;
-            padding: 30px;
-            border: 1px dotted rgb(11,141,196);
-            margin-top: 15px;
-        }
-        #finder input {
-            width: 60%;
-            margin-right: 20px;
-            height: 25px;
-        }
-        #finder button {
-            background-color: rgb(11,141,196) ;
+        #form {
             width: 20%;
-            padding: 8px;
+            margin: 30px auto;
+            padding: 15px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        input{
+            margin-bottom: 20px;
+            width: 100%;
+            height: 30px;
+            font-size: 18px;
+        }
+        button {
+            width: 100%;
+            height: 33px;
+            font-size: 18px;
             color: white;
-            border: none;
-            font-size: 15px;
+            border: 1px solid black;
+            background-color: rgb(50,180,76);
+            padding: 5px;
         }
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
-            grid-template-rows: repeat(2,1fr);
-            /* gap: 20px; */
-            column-gap: 20px;
-            row-gap: 10px;
-            font-size: 13px;
-        }
-        #card {
-            display: flex;
-            justify-content: left;
-            padding: 10px;
-        }
-        .smallGrid {
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
+        button:hover {
+            background-color:rgb(32, 139, 53) ;
         }
         #logo {
             width: 100%;
-            padding-top: 10px;
             text-align: center;
         }
-        #logo img {
-            margin-top: 40px;
-            margin-bottom: 40px;
-        }
+        
         #logo p {
-            margin-bottom: -20px;
             font-weight:bold;
         }
         #contactUs{
-            width: 100%;
             padding-top: 10px;
+            width: 100%;
             background-color: rgb(51,51,51);
             color: white;
             text-align: center;
@@ -188,8 +150,8 @@
             font-size: 13px;
         }
         #base {
-            width: 100%;
             padding-top: 10px;
+            width: 100%;
             background-color: rgb(50,180,76);
             text-align: center;
             color: white;
@@ -200,8 +162,6 @@
             margin:-3% 10% auto auto;
             font-size: 13px;
         }
-        
-        
     </style>
 </head>
 <body>
@@ -235,51 +195,21 @@
         </div>
     </div>
 
-    <div id="container">
-        <div id="left_cell">
-            <div id="fitness">
-                <img style="height:8%; ; width:8%; margin: 10px 5px auto 20px; " src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/78209/stopwatch-clipart-md.png" alt="">
-                <div style="margin-left: 5%;">
-                 <h2 style="margin-bottom: 0%;">Fitness</h2>
-                 <p style="font-size:15px;margin-top: 0%">Find exercises that are right for you and start burning calories today!</p>
-                </div>
-            </div>
+    <div id="form">
+        <h2>Create Account</h2>
+        <label for="">Name</label><br>
+        <input type="text" id="name"><br>
+        <label for="">Email</label><br>
+        <input type="email" id="email"><br>
+        <label for="">Mobile Number</label><br>
+        <input type="number" id="mob"><br>
+        <label for="">Password</label><br>
+        <input type="password" id="password"><br>
+        <a href="file:///Users/govind/Desktop/selfish-skin-4499/signIn.html"><button id="btn">Continue</button></a>
 
-            <div id="finder">
-                <h3>Activity And Exercise Finder</h3>
-                <input type="text">
-                <button>Search</button>
-            </div>
-            <div style="border: 2px dotted rgb(11,141,196);background-color: rgb(235,250,252); margin-top: 20px;">
-                    <h3 style="padding: 10px;">Running</h3>
-                    <div id="card">
-                        <img style="margin-right:10px ;" src="https://a.ftscrt.com/static/images/fitness/lrg_driving.gif" alt="">
-                        <div>
-                            <p><span style="font-weight: bold;">Estimated Energy Burned</span>  for a 70 kg person</p>
-                            <div class="grid">
-                                <div class="smallGrid">
-                                    <div>5 minutes</div>
-                                    <div>10 calories</div>
-                                </div>
-                                <div class="smallGrid">
-                                    <div>15 minutes</div>
-                                    <div>29 calories</div>
-                                </div>
-                                <div class="smallGrid">
-                                    <div>10 minutes</div>
-                                    <div>20 calories</div>
-                               </div>
-                                <div class="smallGrid">
-                                    <div>20 minutes</div>
-                                    <div>59 calories</div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-            </div>
-        </div>
+        <p>Already have an account? <a style="color: black; font-weight: bold;" href="signIn.html">Sign In</a> </p>
     </div>
+
     <div id="logo">
         <div>
             <p>Get the app</p>
@@ -319,5 +249,36 @@
            <img style="height: 60%; margin:10px" src="https://a.ftscrt.com/static/images/markets/smallFlags/IN.png" alt="">
         </div>
     </div>
+
 </body>
 </html>
+
+<script>
+    let form = document.querySelector('#form');
+    document.querySelector('#btn').addEventListener('click', toDo);
+
+    
+
+    function toDo(event){
+        event.preventDefault();
+        if (form.querySelector('#name').value =='' || form.querySelector('#email').value==''||form.querySelector('#mob').value==''||form.querySelector('#password').value==''){
+            alert('Please fill all the credentials');
+        }
+        else {
+            let obj = {
+             name : form.querySelector('#name').value,
+             email : form.querySelector('#email').value,
+             mob : form.querySelector('#mob').value,
+             password : form.querySelector('#password').value,
+            }
+             localStorage.setItem('credentials', JSON.stringify(obj));
+             alert('Account created successfully. Please click on Sign In to continue.');
+        form.querySelector('#name').value = '';
+        form.querySelector('#email').value = '';
+        form.querySelector('#mob').value = ''; 
+        form.querySelector('#password').value = '';
+
+        }
+        
+    }
+</script>
