@@ -1,12 +1,12 @@
 # FatSecret.com clone
 FatSecret is a mobile application, website and API that lets users track their nutrition, exercise and weight.
+<img width="1440" alt="Screenshot 2023-04-04 at 5 12 15 PM" src="https://user-images.githubusercontent.com/105652500/229780879-725ea9d0-860f-482d-984b-093d77e368ad.png">
 
 ## Tech Stack
 HTML, CSS, JavaScript
 
+## Features
 
-## Home page:
-<img width="1440" alt="Screenshot 2023-04-04 at 5 12 15 PM" src="https://user-images.githubusercontent.com/105652500/229780879-725ea9d0-860f-482d-984b-093d77e368ad.png">
 
 
 ## Login page:
