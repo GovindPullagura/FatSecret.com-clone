@@ -10,7 +10,9 @@ HTML, CSS, JavaScript
 
 ## Features
 ### Site
-- 
+- Provides information about different foods and their recipes
+- User can register and login to their account but this site does not provide personal space for the logged in user
+- All the pages are responsive
 
 
 ### Login page:
